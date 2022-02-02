@@ -19,7 +19,7 @@ public class ValidPhoneNumber {
             while (scanner.hasNextLine()) {//adding strings matching pattern
                 String checkString = scanner.nextLine(); //write a string from a file to a variable
                 //Pattern "(xxx) xxx-xxxx", "xxx-xxx-xxxx"
-                Pattern p = Pattern.compile("(?:\\(\\d{3}\\) |\\d{3}[-]*)\\d{3}[-]*\\d{4}");
+                Pattern p = Pattern.compile("^\\(?(\\d{3})\\)?[- ]?(\\d{3})[-](\\d{4})$");
                 if (p.matcher(checkString).matches()) { //check for pattern matching
                     validNumbers.add(checkString); //add valid string
                 }

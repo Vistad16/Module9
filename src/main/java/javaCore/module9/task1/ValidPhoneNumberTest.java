@@ -1,7 +1,6 @@
 package javaCore.module9.task1;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /*
